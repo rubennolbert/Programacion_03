@@ -1,0 +1,5 @@
+etiquetas html:
+
+<h1></h1>		titulos hasta el h6
+<p></P>			parrafos
+<a href="https://www.w3schools.com">This is a link</a>		enlaces

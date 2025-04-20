@@ -1,0 +1,39 @@
+rubros de empleo en base a html:
+
+SEO (Search Engine Optimization)
+Wordpress
+Prompt Engineer
+Creacion de micronichos y google ads
+
+no dar bola:
+-formanting 
+-descrips list
+-quotations
+-computercode
+-symbols
+
+
+recomendaciones:
+
+	reutilizar compu vieja, disco viejo y con linux crearse un servidor casero. 
+	buscar computadores de servidor, pontentes y baratas. armar compu gamer con hadrware de compu de servidores
+
+
+estilos con css:
+
+.referencia clases
+#referencia a ID
+
+padding: espaciado hacia adentro.
+margin: espaciado hacia afuera
+margin-top: hacia arriba.
+margin..
+
+text-align: center; ubica centrar el texto.
+
+cuando queres aplicar ccs durante un evento
+
+.btn-envio-formulario::hover
+
+cursor: pointer;
+

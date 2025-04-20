@@ -1,0 +1,54 @@
+*
+{
+    font-family: "Quantico", sans-serif;
+}
+
+body
+{
+    margin: 0 auto;
+}
+
+header
+{
+    border: 2px solid green;
+}
+
+section
+{
+    border: 2px solid rgb(93, 178, 211);
+    background-color: aliceblue;
+    color: black;
+
+}
+
+h1
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile-pic
+{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.profile-container
+{
+    margin: 0 auto;
+    text-align: center;
+    width: 300px;;
+    border: 2px solid red;
+}
+
+.what-i-do
+{
+    text-align: center;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.what-i-do h2   /*a partir de aca se estilizan todos los h2*/
+{
+    color: aqua;
+}
