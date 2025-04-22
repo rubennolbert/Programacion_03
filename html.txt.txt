@@ -15,3 +15,69 @@ etiquetas html:
 La <hr>etiqueta define un salto temático en una página HTML y generalmente se muestra como una regla horizontal.
 
 El texto dentro de un <pre>elemento se muestra en una fuente de ancho fijo (generalmente Courier) y conserva tanto los espacios como los saltos de línea
+-------------------------------------------------------------------------------------------------------------------------------
+<b>	Defines bold text
+<em>	Defines emphasized text 
+<i>	Defines a part of text in an alternate voice or mood
+<small>	Defines smaller text
+<strong>	Defines important text
+<sub>	Defines subscripted text
+<sup>	Defines superscripted text
+<ins>	Defines inserted text
+<del>	Defines deleted text
+<mark>	Defines marked/highlighted text
+--------------------------------------------------------------------------------------------------------------------------------
+styleUtilice el atributo HTML para el estilo en línea
+Utilice el <style>elemento HTML para definir CSS interno
+Utilice el <link>elemento HTML para hacer referencia a un archivo CSS externo
+Utilice el elemento HTML <head>para almacenar elementos <style> y <link>
+Utilice la colorpropiedad CSS para los colores del texto
+Utilice la font-familypropiedad CSS para fuentes de texto
+Utilice la font-sizepropiedad CSS para tamaños de texto
+Utilice la borderpropiedad CSS para los bordes
+Utilice la propiedad CSS paddingpara el espacio dentro del borde
+Utilice la marginpropiedad CSS para el espacio fuera del borde
+--------------------------------------------------------------------------------------------------------------------------------
+Utilice el <a>elemento para definir un enlace
+Utilice el hrefatributo para definir la dirección del enlace
+Utilice el targetatributo para definir dónde abrir el documento vinculado
+Utilice el <img>elemento (inside <a>) para usar una imagen como enlace
+Utilice el mailto:esquema dentro del hrefatributo para crear un enlace que abra el programa de correo electrónico del usuario
+--------------------------------------------------------------------------------------------------------------------------------
+<style>
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+--------------------------------------------------------------------------------------------------------------------------------
+<a href="default.asp">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+
+
+Utilice el elemento HTML <img>para definir una imagen
+Utilice el srcatributo HTML para definir la URL de la imagen
+Utilice el atributo HTML altpara definir un texto alternativo para una imagen, si no se puede mostrar
+Utilice el HTML widthy heightlos atributos o el CSS widthy heightlas propiedades para definir el tamaño de la imagen
+Utilice la propiedad CSS floatpara dejar que la imagen flote hacia la izquierda o hacia la derecha
+--------------------------------------------------------------------------------------------------------------------------------
