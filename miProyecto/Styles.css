@@ -35,3 +35,19 @@ img
 {
     opacity: 1;
 }
+
+
+a:visited:active
+{
+    color: violet;
+}
+
+a:hover
+{
+    color: brown;
+    background-color: rgb(224, 77, 77);
+    cursor: pointer;
+    border: 2px solid brown;
+    font-size: 50px;
+}
+    

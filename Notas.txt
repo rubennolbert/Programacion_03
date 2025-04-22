@@ -37,3 +37,8 @@ cuando queres aplicar ccs durante un evento
 
 cursor: pointer;
 
+
+pasar asi no mas a z-index. overflow, float, inline-block...  com flex es mas practico e eficiente.
+
+tarea de lunes 21/04. hacer un menu con dropdown.
+

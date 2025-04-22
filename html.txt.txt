@@ -1,5 +1,17 @@
 etiquetas html:
 
 <h1></h1>		titulos hasta el h6
+
 <p></P>			parrafos
+
 <a href="https://www.w3schools.com">This is a link</a>		enlaces
+
+<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">      imagenes
+
+<br>		salto de linea
+
+<p title="I'm a tooltip">This is a paragraph.</p>	El valor del atributo de title se mostrará como información sobre herramientas cuando pase el mouse sobre el elemento
+
+La <hr>etiqueta define un salto temático en una página HTML y generalmente se muestra como una regla horizontal.
+
+El texto dentro de un <pre>elemento se muestra en una fuente de ancho fijo (generalmente Courier) y conserva tanto los espacios como los saltos de línea
