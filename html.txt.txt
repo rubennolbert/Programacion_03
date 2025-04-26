@@ -70,14 +70,288 @@ a:active {
 }
 </style>
 --------------------------------------------------------------------------------------------------------------------------------
+BOTONES DE ENLACE
+
+Un enlace también se puede diseñar como un botón, mediante el uso de CSS:
+
+<style>
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+</style>
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+MARCADORES CON HTML
+
+Primero, use el idatributo para crear un marcador:
+<h2 id="C4">Chapter 4</h2>
+
+Luego, agrega un enlace al marcador ("Ir al Capítulo 4"), desde la misma página:
+<a href="#C4">Jump to Chapter 4</a>
+
+También puedes agregar un enlace a un marcador en otra página:
+<a href="html_demo.html#C4">Jump to Chapter 4</a>
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+Utilice el elemento HTML <img>para definir una imagen
+Utilice el src  atributo HTML para definir la URL de la imagen
+Utilice el atributo HTML alt   para definir un texto alternativo para una imagen, si no se puede mostrar
+Utilice el HTML width  y height   los atributos o el CSS widthy heightlas propiedades para definir el tamaño de la imagen
+Utilice la propiedad CSS floatpara dejar que la imagen flote hacia la izquierda o hacia la derecha
+
+ejemplo:
+
+<img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+--------------------------------------------------------------------------------------------------------------------------------
+IMAGEN COMO ENLACE:
+Para usar una imagen como enlace, coloque la <img>etiqueta dentro de la <a>etiqueta:
+
 <a href="default.asp">
   <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
 </a>
 
-
-Utilice el elemento HTML <img>para definir una imagen
-Utilice el srcatributo HTML para definir la URL de la imagen
-Utilice el atributo HTML altpara definir un texto alternativo para una imagen, si no se puede mostrar
-Utilice el HTML widthy heightlos atributos o el CSS widthy heightlas propiedades para definir el tamaño de la imagen
-Utilice la propiedad CSS floatpara dejar que la imagen flote hacia la izquierda o hacia la derecha
 --------------------------------------------------------------------------------------------------------------------------------
+
+IMAGEN FLOTANTE:
+Utilice la propiedad CSS floatpara dejar que la imagen flote a la derecha o a la izquierda de un texto:
+
+<p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+The image will float to the right of the text.</p>
+
+<p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+The image will float to the left of the text.</p>
+
+--------------------------------------------------------------------------------------------------------------------------------
+Tag	Description
+<img>	Defines an image
+<map>	Defines an image map
+<area>	Defines a clickable area inside an image map
+<picture>	Defines a container for multiple image resources
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+MAPAS DE IMAGENES:
+
+La etiqueta HTML <map>define un mapa de imagen. Un mapa de imagen es una imagen con áreas clicables. Estas áreas se definen con una o más <area>etiquetas.
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Image Maps</h2>
+<p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+
+</body>
+</html>
+
+--------------------------------------------------------------------------------------------------------------------------------
+IMAGEN DE FONDO:
+Para agregar una imagen de fondo a un elemento HTML, utilice el styleatributo HTML y la background-imagepropiedad CSS:
+
+<style>
+body {
+  background-image: url('img_girl.jpg');
+}
+</style>
+
+
+
+<style>
+body {
+  background-image: url('img_girl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>	
+
+
+
+El elemento HTML <picture>:
+
+El elemento HTML <picture>le permite mostrar diferentes imágenes para diferentes dispositivos o tamaños de pantalla.
+El elemento HTML <picture>brinda a los desarrolladores web más flexibilidad para especificar recursos de imágenes.
+
+El <picture>elemento contiene uno o más <source>elementos, cada uno de los cuales hace referencia a diferentes imágenes mediante el srcsetatributo. De esta forma, el navegador puede elegir la imagen que mejor se adapte a la vista o dispositivo actual.
+
+Cada <source>elemento tiene un mediaatributo que define cuándo la imagen es más adecuada.
+
+<picture>
+  <source media="(min-width: 650px)" srcset="img_food.jpg">
+  <source media="(min-width: 465px)" srcset="img_car.jpg">
+  <img src="img_girl.jpg">
+</picture>
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+FAVICON:
+Un favicon es una pequeña imagen que se muestra junto al título de la página en la pestaña del navegador.
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Page Title</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+El elemento de título
+El <title>elemento agrega un título a tu página:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Tutorial</title>
+</head>
+<body>
+
+The content of the document......
+
+</body>
+</html>
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+TABLAS HTML
+
+Las tablas HTML permiten a los desarrolladores web organizar los datos en filas y columnas...
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+LISTAS:
+
+Las listas HTML permiten a los desarrolladores web agrupar un conjunto de elementos relacionados en listas...
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Bloques HTML y elementos en línea:
+
+Cada elemento HTML tiene un valor de visualización predeterminado, dependiendo del tipo de elemento que sea.
+
+Los dos valores de visualización más comunes son bloque y en línea.
+
+Aquí están los elementos a nivel de bloque en HTML:
+
+< dirección >< artículo >< aparte >< cita en bloque >< lienzo >< dd ><div>​​< dl ><dt>​​< conjunto de campos >< figcaption >< figura >< pie de página >< formulario >< h1 > - < h6 >< encabezado >< hora >< li >< principal >< navegación >< sin guión >< ol >< p >< pre >< sección ><tabla>​​< tfoot ><ul>​​< vídeo >
+
+Aquí están los elementos en línea en HTML:
+
+< a >< abr . >< acrónimo >< b >< bdo >< grande >< br >< botón >< citar >< código ><dfn>​​< ellos >< yo >< img >< entrada >< kbd >< etiqueta >< mapa >< objeto >< salida >< q >< muestra >< script >< seleccionar >< pequeño >< span >< fuerte >< sub >< sup >< área de texto >< tiempo >< tt ><var>
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+ELEMENTO <DIV>
+
+El <div>elemento se utiliza como contenedor para otros elementos HTML.
+El elemento <div>
+El <div>elemento es, por defecto, un elemento de bloque, lo que significa que ocupa todo el ancho disponible y viene con saltos de línea antes y después.
+
+MANERAS DEVIDIR UN BLOQUE DIV UNO A LADO DEL OTRO...
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+ATRIBUTO CLASS:
+
+El classatributo HTML se utiliza para especificar una clase para un elemento HTML.
+
+Varios elementos HTML pueden compartir la misma clase.
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.note {
+  font-size: 120%;
+  color: red;
+}
+</style>
+</head>
+<body>
+
+<h1>My <span class="note">Important</span> Heading</h1>
+<p>This is some <span class="note">important</span> text.</p>
+
+</body>
+</html>
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+ATRIBUTO ID:
+
+
+El idatributo especifica un identificador único para un elemento HTML. Su valor iddebe ser único dentro del documento HTML.
+
+El idatributo se utiliza para señalar una declaración de estilo específica en una hoja de estilos. JavaScript también lo utiliza para acceder y manipular el elemento con el ID específico.
+
+La sintaxis para id es: escribir un carácter almohadilla (#), seguido del nombre del id. Luego, definir las propiedades CSS entre llaves {}.
+
+En el siguiente ejemplo, tenemos un <h1>elemento que apunta al identificador "myHeader". Este <h1>elemento se estilizará según la #myHeaderdefinición de estilo en la sección de encabezado:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h1 id="myHeader">My Header</h1>
+
+</body>
+</html>
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+IFRAMES:
+
+Un iframe HTML se utiliza para mostrar una página web dentro de una página web.
+
+<iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"></iframe>	
+
+La etiqueta HTML <iframe>especifica un marco en línea
+El srcatributo define la URL de la página a incrustar
+Incluya siempre un titleatributo (para lectores de pantalla)
+Los atributos heighty widthespecifican el tamaño del iframe
+Úselo border:none;para eliminar el borde alrededor del iframe
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
