@@ -1,0 +1,26 @@
+Tecnologias con mucha demanda
+
+- Java con Spring
+- C#, .net y netcore
+- PHP con Laravel
+- Angular con .net o Java
+- Kotlin
+- React Native
+
+- Low code (powerapp, salesforce, mulesoft y geneos)
+- ABAP, Cobol y RPA
+- Soporte tecnico/Helpdesk
+
+No dejen de buscar
+- Wordpress
+- SEO
+
+
+Foros recomendables
+- Reddit -> devsarg (muy toxico)
+- Reddit -> charruadevs
+- Chusmear constantemente linkedin (para buscar trabajo)
+
+- boomeran (para buscar trabajo)
+
+- bootcamps (para primer laburo)

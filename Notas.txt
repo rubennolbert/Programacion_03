@@ -42,3 +42,30 @@ pasar asi no mas a z-index. overflow, float, inline-block...  com flex es mas pr
 
 tarea de lunes 21/04. hacer un menu con dropdown.
 
+
+-----------------------------------------------------------------------------------
+
+medidas absolutas:
+
+px (pixel)
+
+medidas relativas:
+
+rem. (se toma como referencia el elemento padre)
+%    (dependiendo la cantidad tomando el proporcial del tamaño del elemento padre)
+
+
+flex box:
+
+medias queries:
+
+@media (max-width: 1200px) {}      tablet horizontal 1200px
+
+@media (max-width: 992px) {}     tablet vertixcal 992px
+
+@media (media-width 552px ) {}     celular
+
+
+
+css shapes no dar mucha bola u otros temas ligados a la edicion de imagen avocado de lleno al front
+
