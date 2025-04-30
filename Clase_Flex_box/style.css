@@ -1,76 +1,131 @@
 
-*
-{
+/*
+NOTA: 
+----justify-content organiza horizontalmente!
+----align-items organiza verticalmente!
+*/
+
+*{
     font-size: 12px;
 }
 
-body
-{
+
+/* Etiquetas */
+body {
     margin: 0 auto;
 }
 
-header
-{
+header {
     border: 2px solid blue;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 150px;
     padding-top: 1%;
     padding-bottom: 1%;
-
 }
 
-.header-logo
-{
-    border: 2px solid green;
-    width: 15%;
-    height:  100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.header-logo img
-{
-    width: 40px;
-}
-
-.header-logo p
-{
-    margin: 0px;
-}
-
-.header-nav
-{
-    border: 2px solid red;
-    width: 75%;
-    height: 50px;
+section {
+    border: 2px solid fuchsia;
     
 }
 
-.header-nav ul
-{
+main {
+    height: 60vh;
+    /*border: 2px solid;*/ /*Descomentalo si quieres ver el main!*/
     display: flex;
-    list-style-type: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+/* Clases */
+/*Reglas para el logo*/
+.header-logo {
+    border: 2px solid green;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+}
+.header-logo img {
+    width: 40px;
+}
+.header-logo p {
+    margin: 0px;
+}
+
+/*Reglas para las opciones del Header*/
+.header-nav {
+    border: 2px solid red;
+    width: 75%;
+}
+.header-nav ul {
+    display: flex;
+    list-style-type: none; /*Esto saca los puntos predeterminados del ul por si te huele raro...*/
     justify-content: space-around;
     align-items: center;
+    padding-left: 0px;
 }
 
-#article-container
-{
+/*Secciones*/
+#article-container{
     display: flex;
 }
-
-#art-1, #art-2
-{
-    width: 50%;
-    flex: 1; /*alternativa a width 50% */
+#art-1, #art-2{ /*Aplica a los primeros 2 articulos (arriba del 3ro!)*/
+    /*width: 50%;*/
+    flex: 1; /*Alternativa a 'width: 50%;'*/
 }
 
-#art-1
-{
+/* Reglas para Articulo 1 */
+#art-1{
     border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#art-1 div{ /*Aplica para el Div que lo rodea.*/
     width: 40%;
+    height: 100px;
+    border: 2px solid red;
+    overflow: auto;
+}
+
+#art-2
+{
+    background-color: lavender;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    
+}
+
+#art-2 div
+{
+    background-color: lime;
+    width: 30%;
+    height: 200pxs;
+    overflow: auto;
+}
+
+#art-3
+{
+    display: flex;
+    background-color: lightblue;
+    height: 300px;
+    justify-content: center;
+    align-items: end;
+
+    
+}
+
+#art-3 div
+{
+    width: 50%;
+    background-color: lightcoral;
+    height: 200px;
+    border: 2px solid green;
+    flex-wrap: wrap;
+    gap: 10%;
 }

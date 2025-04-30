@@ -69,3 +69,16 @@ medias queries:
 
 css shapes no dar mucha bola u otros temas ligados a la edicion de imagen avocado de lleno al front
 
+ ranking de tecnologias mas demandas abril 2025:
+
+C#: 1257
+Spring Boot: 858
+Java: 890
+.net: 709
+Net Core: 1027
+Angular: 864
+React.js: 1416
+React Native: 682
+PHP: 838
+COBOL: 637
+Kotlin: 543
