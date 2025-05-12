@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="" id="formulario-de-datos">
+        <h1>Mi formulario de datos</h1>
+
+        <!-- Recurso local/remoto -->
+        <img src="bugatti.jpeg" alt="">
+        <!-- <img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/6B34/production/_bugatti.jpg.webp" alt="LA IMAGEN DE UN AUTO"> -->
+    
+        <label for="nombreUsuario">Ingrese su nombre.</label>
+        <input type="text" name="nombreUsuario">
+        
+        <label for="password">Indiquenos su contraseña.</label>
+        <input type="password" name="password">
+        
+        <label for="edad">Ingrese su edad.</label>
+        <input type="number" name="edad" placeholder="Su edad aquí">
+        
+        <label for="fechaNacimiento">Ingrese su fecha de nacimiento.</label>
+        <input type="date" name="fechaNacimiento">
+        
+        <label for="horaNacimiento">Ingrese su hora de nacimiento.</label>
+        <input type="time" name="horaNacimiento">
+    
+        <label for="tuvoCovid">
+            <input type="checkbox" name="tuvoCovid" id="checkboxCovid"> ¿Tuvo Covid? Clickee la caja si es afirmativo.
+        </label>
+        
+        <label for="partidaNacimiento">Adjunte su partida de nacimiento.</label>
+        <input type="file" name="partidaNacimiento">
+        
+        <label for="colorFavorito">Indiquenos su color favorito.</label>
+        <input type="color" name="colorFavorito">
+        
+        <label for="sexo">Indique su sexo.</label>
+        <div class="sexo-radio-container">
+            <input type="radio" name="sexo" checked class="input-radio-sexo">Masculino
+            <input type="radio" name="sexo" class="input-radio-sexo">Femenino
+        </div>
+    
+        <label for="marca">Ingrese su marca favorita.</label>
+        <select name="marca">
+            <option value=""></option>
+            <option value="nike">Nike</option>
+            <option value="adidas">Adidas</option>
+            <option value="puma">Puma</option>
+            <option value="fila">Fila</option>
+            <option value="topper">Topper</option>
+        </select>
+        
+        <label for="descripcion">Descríbanos cómo se siente.</label>
+        <textarea name="descripcion" placeholder="Escriba aquí"></textarea>
+    
+        <button type="button" class="btn-envio-formulario">Enviar datos</button>
+    </form>
+</body>
+</html>
