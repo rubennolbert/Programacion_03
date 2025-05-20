@@ -48,11 +48,12 @@ console.log(persona["equipo"]);
 /*********************************************************************************************************************************** */
 // objetos globales //
 
-
+/*
 console.log("mensaje informativo");
 console.warn("Esto es una advertencia");
 console.error("Esto es u error");
 console.time("tiempo de ejecucion");
+*/
 
 for(let i = 0; i<1000; i++)
 {
@@ -327,7 +328,7 @@ let persona2 =
         console.log(duplicados);
 
         // filter() para obtener un subconjunto de datos
-        let mayoresQueTres = numeros.filter(numeros => numero > 3);
+        let mayoresQueTres = numeros.filter(numero => numero > 3);
         console.log(mayoresQueTres);
 
         // reduce() para acumular valores
@@ -422,3 +423,288 @@ let persona2 =
         //filter 
         let estudiantesMayores = estudiantes.filter(estudiantes => estudiante.edad > 18);
         console.log(estudiantesMayores);
+
+
+        
+
+
+        // repaso y profundizacion de iteracion de estructuras de datos en JavaScript
+
+        /* for tradicional
+            - ventajas: maxima control, podemos usar break y continue. mayor redimiento (mas rapido)
+            - desventajas: mas verboso (mas complejo de leer)
+            */
+
+
+        /* forEach()
+
+        array.foreach(elemento, indice, arrayOriginal) => {
+            
+            console,log(elemento, indice);
+            
+        }
+        */
+        // modificar un array
+
+        const numeros3 = [1, 2, 3];
+        const dobles = [];
+
+        numeros3.forEach(num => dobles.push(num*2));
+        console.log(dobles);
+
+        // actualizar propiedades
+        const estudiante2 = [
+            {nombre: "candela", nota: 21},
+            {nombre: "Kevin", nota: 7},
+            {nombre: "Ignacio",  nota: 9}
+        ];
+
+        estudiante2.forEach(estudiante =>{estudiante.aprobado = estudiante.nota >= 7;   })
+
+        /* map()
+
+        const nuevosValores = array.map(elemento => elemento * 2);
+
+            - proposito: transformar cada elemento.
+            - retorna: nuevo array con los resultados.
+        */
+
+        // Crear un array de cuadrados
+        const nums = [1, 2, 3, 4];
+        const cuadrados = nums.map(num => num * num);
+        console.log(cuadrados);
+
+        // convertir a strings
+        const edades = [25, 30, 18];
+        const edadesStr =  edades.map(edad => `Tengo ${edad} años`);
+        console.log(edadesStr);
+
+        // Extraer propiedades
+        const empleados = [
+            {id: 1, nombre: "candela", departamento: "canelones"},
+            {id: 2, nombre: "Kevin", departamento: "Montevideo"},
+            {id: 3, nombre: "Ignacio", departamento: "Punta del Este"}
+        ];
+
+        const nombresEmpleados = empleados.map(emp => emp.nombre);
+        console.log(nombresEmpleados);
+
+        /*
+        filter()
+
+        const filtrados = array.filter(elemento > 10)
+            -proposito: seleccionar elementos que cumplan una condicion
+            - retorna: nuevo array con elementos filtrados
+            */
+
+            // filtra numeros pares
+            const numeros4 = [1, 2, 3, 4, 5, 6];
+            const pares4 = numeros4.filter(num => num % 2 === 0);
+            console.log(pares4);
+
+            // filtrar string largos
+            const palabras = ["hola", "adios", "bienvenido", "ok"];
+            const palabrasLargas =palabras.filter(palab => palab.length > 4);
+            console.log(palabrasLargas);
+
+            // filtrar por propiedada
+            const personas2 = [
+                {nombre: "candela", edad: 25},
+                {nombre: "Kevin", edad: 17},
+                {nombre: "Ignacio",  edad: 29}
+            ]
+
+            const mayores = personas2.filter(persona => persona.edad >= 18);
+            console.log(mayores);
+
+            // filtrar multiples condiciones
+            const ordenes = [
+                {   producto: 101, nombre: "Laptop", precio: 100000, cantidad: 1, completada: true},
+                {   producto: 102, nombre: "Teclado", precio: 15000, cantidad: 3, completada: false},
+                {   producto: 103, nombre: "Mouse", precio: 1000, cantidad: 1, completada: true}
+            ];
+
+            const ordenesMultiplesCompletadas = ordenes.filter(orden =>{ orden.completada && orden.cantidad > 1;  });
+
+            console.log(ordenesMultiplesCompletadas);
+
+            /* reduce()
+
+            const suma =  array.reduce((acumulador, elemeto) => acumulador + elemento, 0)
+
+                - proposito: Reducir el array a un unico valor
+                - retorna: valor acumulado.
+            */
+
+            // sumar elementos
+            const numeros5 = [10, 20, 30];
+            const suma5 = numeros5.reduce((acum, num) => acum + num, 0);
+            console.log(suma5);    
+
+            // concatenar strings
+            const palabras2 = ["hola", "mundo", "JavaScript"];
+            const frase = palabras2.reduce((acum, palabra) => acum + " " + palabra);
+            console.log(frase);
+
+            // array de objetos
+            const ventas = [
+                { productoId: 101, nombre: "Laptop", precio: 100000, cantidad: 1, completada: true},
+                { productoId: 202, nombre: "Teclado", precio: 15000, cantidad: 3, completada: true},
+                { productoId: 303, nombre: "Mouse", precio: 10000, cantidad: 4, completada: false}
+            ];
+
+            const totalVentas = ventas.reduce((total, item) => { return total + (item.cantidad * item.precio)}, 0);
+
+            console.log(totalVentas);
+
+            /* find() y findIndex()
+
+            const encontrado = array.find(elemento => elemento.id === 123);
+            const indice = array.findIndex(elemento => elemento.id === 123);
+
+                - proposito: Buscar el primer elemento que cumpla una condicion
+                - retorna: el elemento (find) o el indice (findIndex)
+                */
+
+            // buscar numero
+            const numeros6 = [5, 12, 8, 130, 44];
+            const encontrado = numeros6.find(num => num > 10);
+            console.log(encontrado);
+
+            const indice = numeros6.findIndex(num => num > 100);
+            console.log(indice);
+
+            // buscar objeto por propiedad
+            const usuarios2 = [
+                {id: 1, nombre: "candela", activo: true},
+                {id: 2, nombre: "Kevin", activo: false},
+                {id: 3, nombre: "Ignacio", activo: true}
+            ];
+
+            const usuarioActivo = usuarios2.find(usuario => usuario.activo);
+            console.log(usuarioActivo);
+
+
+            const tareas = [
+                {id: 1, descripcion: "Comprar fideos", completada: false},
+                {id: 2, descripcion: "Estudiar javascript", completada: true},
+                {id: 3, descripcion: "Andar en bici", completada: false}
+            ];
+
+            const indiceTarea = tareas.findIndex(tarea => tarea.completada);
+            console.log(indiceTarea);
+
+            /*  for ... of
+
+                for(const elemento of array)
+                {
+                    if(elemento === "stop")
+                    {
+                        break;
+                    }
+                }
+
+                - ventajas: sintaxis limpia, permite break/continue
+                - desventajas: no provee indice automatico.
+            */
+
+            /*
+            const simbolos = [];
+            for(const simbolo of simbolo) ///////////////// incompleto ///////////////
+            {
+                console.log(simbolo);
+                if(simbolo === ) break;
+            }
+            */
+
+
+            // itera objetos
+            const empleados2 = [
+                {id: 1, nombre: "candela", salario: 3000},
+                {id: 2, nombre: "Kevin", salario: 3500},
+                {id: 3, nombre: "Ignacio", salario: 4800}
+            ];
+
+            for(const empleado of empleados2)
+            {
+                if(empleado.salario > 3500)
+                {
+                    console.log(`${empleado.nombre} gana mas de 3500`);
+                    break;
+                }
+            }
+
+            // iteracion en objetos
+            // iterando claves de objetos con for ...in
+            const estudiantes3 = {
+                nmobre: "Joaquin",
+                edad: 30,
+                curso: "JavaScript"
+            };
+
+            for(const propiedad in estudiantes3)
+            {
+                console.log(`${propiedad}: ${estudiantes3[propiedad]}`);
+            }
+
+            // objetos.keys() para obtener claves
+            const claves2 = Object.keys(estudiantes3);
+            console.log(claves2);
+            claves2.forEach(clave => console.log(clave));
+
+            // objet.values() para obtener valores
+            const valores2 = Object.values(estudiantes3);
+            console.log(valores2);
+            valores2.forEach(valor => console.log(valor));
+
+            // object.entries() para obtener pares clava-valor
+            for(const [clave, valor] of Object.entries(estudiantes3))
+            {
+                console.log(`${clave}: ${valor}`);
+            }
+
+            /* Metodos de comparacion con some() y every()
+
+            const algunoCumple = array.some(elemento => elemento > 0);
+            const todosCumples = array.every(elemento => elemento > 0);
+
+                - proposito: verificar si algunos/todos cumplen la condicion
+                - retorna: booleano
+                */
+
+            // verificar si hay numeros pares
+            const numeros7 = [1, 3, 5, 7, 8];
+            const hayPares = numeros7.some(num => num % 2 === 0 );
+            console.log(hayPares);
+
+            // verificar si son todos positivos
+            const todosPositivos = numeros7.every(num => num > 0);
+            console.log(todosPositivos);
+
+            // verificar si hjay usuarios admi
+            const usuarios3 = [
+                {id: 1, nombre: "candela", salario: 3000, rol : "user"},
+                {id: 2, nombre: "Kevin", salario: 3500, rol: "admin"},
+                {id: 3, nombre: "Ignacio", salario: 4800, rol: "user"}
+            ];
+
+            const existeAdmin = usuarios3.some(user => user.rol === "admin");
+            console.log(existeAdmin);
+
+            // verificar si todos aprobaron
+            const estudiantes4 = [
+                {nombre: "candela", nota: 8},
+                {nombre: "Kevin", nota: 6},
+                {nombre: "Ignacio", nota: 9}
+            ];
+
+            const todosAprobaron = estudiantes4.every(estudiante => estudiante.nota >= 7);
+            console.log(todosAprobaron);
+
+            /*  comparacion
+
+            */
+            
+
+
+
