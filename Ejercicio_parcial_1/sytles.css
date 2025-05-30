@@ -1,0 +1,44 @@
+header
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: 5px solid red;
+    padding: 10px 40px;
+    background-color: lightcoral;
+
+}
+
+.logo
+{
+    border: 2px solid blue;
+    margin-right: auto;
+    
+}
+
+.logo img
+{
+    width: 80px;
+}
+
+.carrito img
+{
+    width: 40px;
+}
+
+main, main section{ border: 2px solid black;}
+
+/*
+Tarea para el lunes. Creen su propia tienda de cualquier producto, estilenla y creen un array de 15 productos
+cada objeto de este array va a tener de propiedades:
+- id
+- nombre
+- precio
+- img (ruta, url o relativa)
+Javier Rodríguez Gallardo
+21:35
+Que vamos a hacer el proximo lunes? 
+- Aplicaremos un evento filtro al input del header
+- Aplicar funcionalidad (evento click) al boton de Agregar a carrito
+- Hacer toda la logica de carrito, iremos añadiendo los productos seleccionados
+*/

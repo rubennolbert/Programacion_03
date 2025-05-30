@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="sytles.css">
+    <script defer src="main.js"></script>
+
+</head>
+<body>
+
+    <!--  Consigna para el parcial
+
+Tener una pagina HTML minimamente estilada. Esta va a ser la estructura a la que vamos a volcar nuestro HTML dinamico
+
+Un <header> que se divida en 3 secciones
+    - Un logo
+    - Un input type text
+    - un div con clase carrito
+
+Un <main> con flex en columna con dos <section>
+    - un <section> con id seccion-productos
+        - este debe tener un h2 con titulo mis productos y un div con id contenedor-productos
+
+    - un <section> con id seccion-carrito
+        - en un <section> con id seccion-carrito
+        - este debe tener un h2, un div id items-carrito y un div id total-carrito
+
+Estilado minimo pero maquetacion con flex, queremos dibujar la estructura a la que volcarle nuestro HTML dinamico con JavaScript usando DOM
+-->
+
+    <header>
+
+        <div class="logo"><img src="img/videogamestore.png  " alt="tienda de cafe"></div>
+        <div class="buscador"><input type="text" name="buscador" placeholder="buscar"></div>
+        <div class="carrito"><img src="img/carrito.png" alt="carrito"><div class="carrito"></div>
+    
+    </header>
+
+    <main>
+        <section id="seccion-productos">
+            <h2>Mis productos</h2>
+            <div id="contenedor-productos">
+                <!--
+                <div class="tarjeta-producto">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.gamespot.com%2Fa%2Fuploads%2Fscale_medium%2F1197%2F11970954%2F3248235-smo.jpg&f=1&nofb=1&ipt=b02f7f924dc15b82ea0a62640a75bac3b405551970fc42b43faf6add2321b575" alt="">
+                    <h3>Titulo</h3>
+                    <p>Descripción</p>
+                    <button>Agregar a carrito</button>
+            </div>
+            -->
+        </section>
+
+        <section id="seccion-carrito">
+            <h2></h2>
+            <div id="items-carrito"></div>
+            <div id="total-carrito"></div>
+
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
