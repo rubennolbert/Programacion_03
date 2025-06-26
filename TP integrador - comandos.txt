@@ -1,0 +1,9 @@
+node -v
+npm -v
+ls
+cd
+npm init -y         ==== para inicializar proyecto node con npm, te arma el proyecto con node
+"type": "module",    ////se agrega al archivo package, para trabajar el sistemas de modulos...  tambien "dev": "nodemon index.js" el scripst
+npm install espress cors mysql2 nodemon dotenv  //instalamos varios componentes
+touch index.js  //para crear carpeta con la terminal... USAR TERMINAL BASH PARA EVITAR COMANDOS DE LINUX
+npm run dev  // para arrancar index.js

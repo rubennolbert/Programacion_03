@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial I</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <a href="index.html"><div class="logo">Frutería</div></a>
+  
+        <input type="text" placeholder="Buscar frutas..." id="input-busqueda">
+        <span id="nombre-alumno"></span>
+        <span id="contador-carrito">Carrito: 0 productos</span>
+        
+    </header>
+
+    
+    <!-- Contenedor principal -->
+    <main>
+    <section id="seccion-productos"> <!-- class o id ? -->
+        <h2>Nuestras frutas</h2>
+         <div class="ordenamiento">
+            <button id="ordenar-nombre">Ordenar por nombre</button>
+            <button id="ordenar-precio">Ordenar por precio</button>
+        </div>
+        <div id="contenedor-productos"></div>
+    </section>
+
+
+    <!-- Seccion carrito -->
+    <section id="seccion-carrito">
+        <h2>Carrito</h2>
+        
+        <ul id="lista-carrito"></ul>
+        <h3 id="total-carrito">Total: $0</h3>
+        <button id="btn-vaciar-carrito">Vaciar carrito</button>
+
+        <div class="total-carrito">
+            <p>Total: <span id="precio-total">$0.00</span></p>
+        
+        </div>
+    </section>
+
+    </main>
+</body>
+</html>
