@@ -7,3 +7,12 @@ npm init -y         ==== para inicializar proyecto node con npm, te arma el proy
 npm install espress cors mysql2 nodemon dotenv  //instalamos varios componentes
 touch index.js  //para crear carpeta con la terminal... USAR TERMINAL BASH PARA EVITAR COMANDOS DE LINUX
 npm run dev  // para arrancar index.js
+
+.env //variables de entorno
+
+mkdir src  //carpeta contiene todas las operaciones del api rest
+mkdir src/api //
+mkdir src/api/config    //trae la informacion
+touch src/api/config/environments.js //extra la informacion del .env
+
+db.js //conexion a la base de datos
